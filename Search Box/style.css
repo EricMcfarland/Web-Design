@@ -1,0 +1,163 @@
+*{
+  border:1px solid rgba(0,0,0,0.4);
+  margin:0;
+}
+body{
+  background-color:grey;
+
+}
+#searchBarTwo{
+border: 3px solid black;
+font-size: 16px;
+padding: 6px;
+}
+#searchBtnTwo{
+border: 3px solid black;
+font-size: 16px;
+padding: 6px;
+}
+form{
+  margin:0;
+}
+
+#searchBarThree{
+border-top-left-radius: 20px;
+border-bottom-left-radius: 20px;
+padding:15px;
+border: 4px blue solid;
+}
+#searchBtnThree{
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding:15px;
+  border: 4px blue solid;
+  border-left: 0;
+}
+#searchBarFour{
+  background-image: url("https://cdn0.iconfinder.com/data/icons/30-hardware-line-icons/64/Search-128.png");
+  background-position:left;
+  padding:3px 3px 3px 35px;
+  background-repeat: no-repeat;
+  background-size:30px;
+  font-size:20px;
+}
+
+#searchBarFive{
+  width: 130px;
+  height:35px;
+  background-color: #1f5b8a;
+  transition-property: width, height, background-color, transform;
+  transition-duration: 2.0s, 1.5s, 0.5s, 2.0s;
+  transition-timing-function: ease-in-out;
+
+}
+#searchBarFive:focus{
+  width: 400px;
+  height:50px;
+  background-color: white;
+  transform: rotate(360deg);
+}
+
+#searchBarSix{
+  width: 50px;
+  height:50px;
+  background-image: url("https://cdn0.iconfinder.com/data/icons/30-hardware-line-icons/64/Search-128.png");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size:45px;
+  padding-top:15px;
+  padding-bottom: 15px;
+  padding-right:20px;
+  font-size: 20px;
+  border: 3px blue solid;
+  border-radius:25px;
+  background-color: purple;
+  transition: width 2.0s, padding-left;
+  transition-timing-function: ease-in-out;
+}
+#searchBarSix:focus{
+  padding-left: 50px;
+  width: 400px;
+}
+#searchBtnSix{
+  width: 50px;
+  height: 50px;
+  margin-left:-50px;
+  border-radius: 25px;
+  border: 3px blue solid;
+  font-size: :20px;
+
+}
+#Container{
+  position:relative;
+overflow:auto;
+white-space: nowrap;
+height:400px;
+width:100%
+}
+
+#searchImg{
+  cursor: pointer;
+  transition-duration: 2.0s;
+  transition-timing-function: ease-in-out;
+  width:250px;
+  position: absolute;
+  top:50%;
+  left:50%;
+  margin: -125px 0 0 -125px;
+}
+.imgAnimate{
+  -webkit-transition: 3s;
+  -moz-transition: 3s;
+  -ms-transition: 3s;
+  -o-transition: 3s;
+  transition: 3s;
+  transform: scale(0.06);
+}
+
+.searchBarSevenClass{
+  width:50px;
+  height:15px;
+  -webkit-transition: width 2s ease;
+  -moz-transition: width 2s ease;
+  -ms-transition: width 2s ease;
+  -o-transition: width 2s ease;
+  transition: width 2s ease;
+}
+.searchBarSevenExtend{
+    width:100px;
+}
+
+#searchBtnSeven{
+  background: url(http://www.iliumsoft.com/themes/ilium-custom/images/search-glass.png) no-repeat;
+  background-position: center;
+  background-size: 15px;
+  display:inline-block;
+  width:15px;
+
+}
+#BtnSeven{
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin: -7px 0 0 -7px;
+
+}
+
+/* Still to do:
+-button six wont line up the text and submit button
+  -try styling the BtnSix form instead
+  -could also place form in div?
+-click something and turn into search box
+  -Add a transition that scales down the image
+  -Apply image to a submit button
+  -extend a text field from img
+-add a clear button to fields
+
+Skills to learn
+1.) Apply image to input type=submit X
+2.) To do transition via css need to find correct psuedo element setup for img X
+3.) Find correct transition (Learn flexbox to set up divs correctly) X-ish
+4.) Get text field to open after
+    -run 2nd css transition after img to button transition occurs
+      -This isnt working. Try keyframes next.

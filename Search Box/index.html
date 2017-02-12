@@ -1,0 +1,48 @@
+<!Doctype htrml>
+<html>
+<head>
+  <title>Search Bar</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="C:/Users/Eric/Documents/Web Design/Search Box/js.js"></script>
+
+</head>
+<body>
+  <form action ="search.php"  method="post">
+    <!--value is default text, onmousedown is click, onblur is when clicked outside search bar, placeholder is ghost text once field is clicked-->
+    <input type="text" id="searchBar" value="Search Wikipedia" maxlength="50" onmousedown="fieldActive()" onblur="" autocomplete="on" placeholder="" /><input type="submit" id="searchBtn" value="Find" />
+  </form>
+
+  <form action ="search.php"  method="post">
+    <!--value is default text, onmousedown is click, onblur is when clicked outside search bar, placeholder is ghost text once field is clicked-->
+    <input type="text" id="searchBarTwo" value="Search Wikipedia" maxlength="50" onmousedown="fieldActive()" onblur="" autocomplete="on" placeholder="" /><input type="submit" id="searchBtnTwo" value="Find" />
+  </form>
+
+  <form action ="search.php"  method="post">
+    <!--value is default text, onmousedown is click, onblur is when clicked outside search bar, placeholder is ghost text once field is clicked-->
+    <input type="text" id="searchBarThree" value="Search Wikipedia" maxlength="50" onmousedown="fieldActive()" onblur="" autocomplete="on" placeholder="" /><input type="submit" id="searchBtnThree" value="Find" />
+  </form>
+
+  <form action ="search.php"  method="post">
+    <!--value is default text, onmousedown is click, onblur is when clicked outside search bar, placeholder is ghost text once field is clicked-->
+    <input type="text" id="searchBarFour" value="Search Wikipedia" maxlength="50" onmousedown="fieldActive()" onblur="" autocomplete="on" placeholder="" /><input type="submit" id="searchBtnFour" value="Find" />
+  </form>
+
+
+  <form action ="search.php"  method="post">
+    <!--value is default text, onmousedown is click, onblur is when clicked outside search bar, placeholder is ghost text once field is clicked-->
+    <input type="text" id="searchBarFive" value="Search Wikipedia" maxlength="50" onmousedown="fieldActive()" onblur="" autocomplete="on" placeholder="" /><input type="submit" id="searchBtnFive" value="Find" />
+  </form>
+
+  <form id="BtnSix"  method="post">
+    <!--value is default text, onmousedown is click, onblur is when clicked outside search bar, placeholder is ghost text once field is clicked-->
+    <input type="text" id="searchBarSix" value="" maxlength="50" onmousedown="fieldActive()" onblur="fieldInactive()" autocomplete="on" placeholder="" />
+  </form>
+
+
+  <div id="Container">
+    <img id="searchImg" src="https://cdn0.iconfinder.com/data/icons/30-hardware-line-icons/64/Search-128.png">
+  </div>
+
+</body>
+</html>
